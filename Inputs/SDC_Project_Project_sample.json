@@ -4,7 +4,7 @@
 	"redi_key": "abcdefg",
 	"filepath": "/var/lib/aion/Data/rededge_dc/abcdef.jon",
 	"Project": {
-		"ProjectInternalID": "",
+		"ProjectInternalID": "00000035",
         "ProjectExternalID": "",
         "ProjectDescription": "",
         "ProjectLangBsdDescription": "",
@@ -32,7 +32,7 @@
         "ForecastedStartDate": "",
         "ForecastedEndDate": "",
         "BusinessArea": "",
-        "Plant": "",
+        "Plant": "0001",
         "Currency": "",
         "BudgetProfile": "",
         "PlanningProfile": "",
@@ -194,8 +194,8 @@
 				"FreeDefinedIndicator2": true
 			}
 		},
-	"api_schema": "ap.4.beh.aleorder.v1.aleOrder.Created.v1",
+	"api_schema": "SAPProjectReads",
 	"accepter": ["Project"],
-	"project_id": "",
+	"project_id": "00000035",
 	"deleted": false
 }

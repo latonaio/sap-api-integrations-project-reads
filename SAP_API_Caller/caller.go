@@ -69,7 +69,7 @@ func (c *SAPAPICaller) Project(projectInternalID, plant string) {
 }
 
 func (c *SAPAPICaller) callProjectSrvAPIRequirementProject(api, projectInternalID, plant string) ([]sap_api_output_formatter.Project, error) {
-	url := strings.Join([]string{c.baseURL, "API_PROJECT_V2_SRV", api}, "/")
+	url := strings.Join([]string{c.baseURL, "API_PROJECT_SRV", api}, "/")
 	param := c.getQueryWithProject(map[string]string{}, projectInternalID, plant)
 
 	resp, err := c.requestClient.Request("GET", url, param, "")
@@ -111,7 +111,7 @@ func (c *SAPAPICaller) WBSElement(wBSElementInternalID, plant string) {
 }
 
 func (c *SAPAPICaller) callProjectSrvAPIRequirementWBSElement(api, wBSElementInternalID, plant string) ([]sap_api_output_formatter.WBSElement, error) {
-	url := strings.Join([]string{c.baseURL, "API_PROJECT_V2_SRV", api}, "/")
+	url := strings.Join([]string{c.baseURL, "API_PROJECT_SRV", api}, "/")
 
 	param := c.getQueryWithWBSElement(map[string]string{}, wBSElementInternalID, plant)
 
